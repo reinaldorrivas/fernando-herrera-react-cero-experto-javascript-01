@@ -8,8 +8,7 @@ const cumplio = true;
 console.info('Me llamo ' + nombre + ' y tengo ' + edad + ' años.')
 
 
-// Demostración de cómo las variables con nombres iguales se pueden llamar igual en distintos
-// ámbitos de bloque.
+// Demostración de cómo variables con nombres iguales pueden existir en distintos ámbitos de bloque.
 if (cumplio) {
   const edad = 36;
   console.info('Cumplí ' + edad + ' años.');
