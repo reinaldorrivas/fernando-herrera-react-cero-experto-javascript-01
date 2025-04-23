@@ -1,3 +1,8 @@
+// Este es un objeto literal, que es una forma de crear un objeto en JavaScript.
+// Un objeto literal es una colección de propiedades y métodos.
+// Un objeto es una colección de pares clave-valor.
+// Las claves son cadenas de texto y los valores pueden ser de cualquier tipo.
+// Un objeto puede contener otros objetos, arreglos y funciones.
 const persona = {
   name: 'John Doe',
   age: 30,
