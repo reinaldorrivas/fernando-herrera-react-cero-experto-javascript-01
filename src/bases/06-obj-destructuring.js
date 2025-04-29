@@ -11,18 +11,21 @@ const superhero = {
     powers: ['martial arts', 'intelligence'],
     isAlive: true,
   },
+  getInfo: function () {
+    return `Hello, my name is ${this.realName} and I am ${this.age} years old.`;
+  },
 };
 
 console.table(superhero);
 
-// Desestructuración de un objeto
+// Desestructuración de un objeto:
 const { realName: realName, nickname, age } = superhero;
 
 console.log('Name: ', realName, 'Nickname: ', nickname, 'Age: ', age);
 
-// Desestructuración de un objeto anidado
+// Desestructuración de un objeto anidado:
 const {
-  friend: {
+  friends: {
     realName: friendRealName,
     nickname: friendNickname,
     age: friendAge,
@@ -38,6 +41,7 @@ console.log(
   friendAge
 );
 
+// Desestructuración de un objeto retornado por una función:
 const superheroInfo = ({ nickname, age, range = 'Captain' }) => {
   console.log('Hello, ' + range + '!');
 
@@ -48,4 +52,10 @@ const superheroInfo = ({ nickname, age, range = 'Captain' }) => {
 };
 
 const { superheroNickname, superheroAge } = superheroInfo(superhero);
+
 console.log('superhero: ', superheroNickname, 'superhero age: ', superheroAge);
+
+// Desestructuración de un objeto con función:
+const { getInfo } = superhero;
+
+console.log(getInfo());
