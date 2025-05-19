@@ -26,9 +26,9 @@ console.table(persona);
 
 // Esto es una copia por valor, pero no es una copia profunda, por lo que cualquier cambio en los objetos anidados en persona3 afectará a persona:
 const persona3 = { ...persona };
-persona3.name = 'Cindy Abaddie';
-persona3.age = 33;
-persona3.occupation = 'Secretary';
+persona3.name = 'Valeria Rivas';
+persona3.age = 5;
+persona3.occupation = 'Estudiante';
 persona3.location.city = 'Miranda';
 persona3.location.country = 'Venezuela';
 
@@ -41,6 +41,7 @@ persona4.name = 'Miranda Rivas';
 persona4.age = 9;
 persona4.occupation = 'Estudiante';
 persona4.location.city = 'Caracas';
+persona4.location.country = 'Venezuela';
 
 console.table(persona4);
 console.table(persona);

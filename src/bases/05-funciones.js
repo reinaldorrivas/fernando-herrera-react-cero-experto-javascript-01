@@ -1,7 +1,7 @@
 // Esto es una función tradicional:
 // Se declaran con la palabra reservada function y tienen un nombre.
 // La sintaxis es más larga que la de las funciones de flecha y tienen su propio this.
-// La función se puede llamar antes de ser declarada.
+// La función se puede llamar antes de ser declarada (Hoisting).
 console.info(saludar('Reinaldo'));
 
 function saludar(nombre) {
@@ -15,7 +15,7 @@ const saludar2 = function (nombre) {
   return 'Hola ' + nombre;
 };
 
-console.info(saludar2('Cindy'));
+console.info(saludar2('Jireh'));
 
 // Esto es una expresión de función de flecha:
 // Las funciones de flecha son una forma más corta de escribir funciones.
@@ -25,7 +25,7 @@ const saludar3 = (nombre) => {
   return 'Hola ' + nombre;
 };
 
-console.info(saludar3('Francisco'));
+console.info(saludar3('Licé'));
 
 // Esto es una expresión de función de flecha con un solo parámetro y con un solo retorno:
 // Si la función tiene un solo parámetro, se puede omitir los paréntesis.
